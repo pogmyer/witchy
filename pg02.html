@@ -45,17 +45,18 @@
         <div class="topwords">
             <p id="whatwhere">F:\learn\udemy\web\CSS Bootcamp Series - vid 08 - 22:30</p>
             <p>(append a phrase onto the end of a form field's input)</p>
-            <div id="lista">
-                <ul id="list01">
-                    <p><span class="span">getElementById("theID")</span></p>
-                    <p><span class="span">addEventListener("event", function...)</span></p>
-                    <p><span class="span">innerText &nbsp;&nbsp;&nbsp;(a property)</span></p>
-                </ul>
-            </div>
+
+                <div class="list01">
+                    <p>getElementById("theID")</p>
+                    <p>addEventListener("event", function...)</p>
+                    <p>innerText - a property</p>
+                </div>
+
         </div>
 
-
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 <!-- //// below is code from vid 08 of the CSS Bootcamp Series ////// -->
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
         <input type="text" id="field01">
 
@@ -76,26 +77,27 @@
         </ul> 
 
         <div id="finished">
-            const field01 = document.<span class="span_sm">getElementById</span>("field01")<br>
-            const original = document.<span class="span_sm">getElementById</span>("original")<br><br>
+            const <span class="span_sm_blue">field01</span> = document.<span class="span_md_red">getElementById</span>("<span class="span_sm_blue">field01</span>")
+            <span class="comment">// "field01" is from the HTML input field's "id"= tag</span><br>
+            const <span class="span_sm_green">original</span> = document.<span class="span_sm">getElementById</span>("<span class="span_sm_green">original</span>")<br><br>
 
-            field01.<span class="span_sm">addEventListener</span>("input", amazing) &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="span_sm_blue">field01</span>.<span class="span_md_red">addEventListener</span>("input", amazing)
             <span class="comment">// create the function below then call it here</span><br><br>
 
             function amazing() {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;if (field01.value) { &nbsp;&nbsp;&nbsp;&nbsp;
-                    <span class="comment">// if field01 is not empty there is a value</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;original.<span class="span_sm">innerText</span> = field01.value + " is fine"<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;} else { <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;original.<span class="span_sm">innerText</span> = "Please enter a name."
-                &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// field01 is empty - no value</span><br>
-             &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                <span class="indent">if</span> (<span class="span_sm_blue">field01</span>.value) {<span class="comment">// if field01 is not empty there is a value and so returns TRUE here</span><br>
+                <span class="span_sm_green indent2">original</span>.<span class="span_md_red">innerText</span> = <span class="span_sm_blue">field01</span>.value + " is fine"<br>
+                <span class="indent">}</span> else { <span class="comment">// field01 is empty - no value</span><br>
+                <span class="span_sm_green indent2">original</span>.<span class="span_md_red">innerText</span> = "Please enter a name."
+                <br>
+                <span class="indent">}</span><br>
             }
         </div>
 
 
-
-<!-- below is code for witchy pic ////////////////////////////////////////////////-->
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<!-- //// below is code for witchy pic ///////////////////////////////-->
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
         
         <div class="pic" >
             <div class="insideout">
@@ -104,8 +106,13 @@
         </div>
         
     </div>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<!-- //// below is code for scripts ////////////////////////////////////////////-->
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="scripts/main01.js" charset="utf-8"></script>
+    <script src="scripts/pg01.js" charset="utf-8"></script>
 </body>
 
 </html>
