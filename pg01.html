@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witchy pg01</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+    <div class="wrapper">
+
+<!-- //// below is code for accordian nav ///////////////////////////-->
+
+        <div class="separate">
+        <main class="main">
+            <div class="accordian">
+                <nav class="accordian__tabs">
+                    <ul class="tabs">
+                      <li class="tabs__tab" id="tabs--active" value="0">1</li>
+                      <li class="tabs__tab" value="1">2</li>
+                      <li class="tabs__tab" value="2">3</li>
+                      <li class="tabs__tab" value="3">4</li>
+                      <li class="tabs__tab" value="4">5</li>
+                      <li class="tabs__tab" value="5">6</li>
+                      <li class="tabs__tab" value="6">7</li>
+                      <li class="tabs__tab" value="7">8</li>
+                    </ul>
+                </nav>
+                <div class="accordian__container">
+                    <img src="https://media-members.nationalgeographic.com/static-media/images/css_images/nationalGeographic_default_avatar.jpg" alt="" class="accordian__image">
+                    <div class="accordian__content-box"></div>
+                </div>
+            </div>
+        </main>
+        </div> <!-- end div.separate -->
+        
+
+<!-- //// below is code for head of page //////////////////////////// -->       
+
+        <div class="topwords">
+            <p id="whatwhere">F:\learn\udemy\web\CSS Bootcamp Series - vid 08 - 22:30</p>
+            <p>(append a phrase onto the end of a form field's input)</p>
+
+                <div class="list01">
+                    <p>getElementById("theID")</p>
+                    <p>addEventListener("event", function...)></p>
+                    <p>innerText - a property</p>
+                </div>
+
+        </div>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<!-- //// below is code from vid 08 of the CSS Bootcamp Series ////// -->
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+        <input type="text" id="field01">
+
+        <h1 id="original">Please enter a name.</h1>
+
+        <ul>
+            <li>in the HTML give the input field an ID ["theID"] so it can be refered to by the javascript</li>
+            <li>in the javascript file use "getElementById("theID")" to hook on to the form field</li>
+            <li>the getElementById() method returns an object that represents the specified HTML element</li>
+            <li>because it is an object it has properties and one of them is "value" (what has been typed into the field)</li>
+            <li>make a const variable and name it as "theID" to hold " document.getElementById( ["theID"] ) "</li>
+            <li>this const variable is an object and so has properties (like "value")</li>
+            <li>use: " const theID = document.getElementById("theID") "</li>
+            <li>use: theID.addEventListener("type of event", function...)</li>
+            <li>add id to paragraph in HTML</li>
+            <li>add another const variable to hold the paragraph id ["please"]</li>
+            <li>Finished:</li>
+        </ul> 
+
+        <div id="finished">
+            const <span class="span_sm_blue">field01</span> = document.<span class="span_md_red">getElementById</span>("<span class="span_sm_blue">field01</span>")
+            <span class="comment">// "field01" is from the HTML input field's "id"= tag</span><br>
+            const <span class="span_sm_green">original</span> = document.<span class="span_sm">getElementById</span>("<span class="span_sm_green">original</span>")<br><br>
+
+            <span class="span_sm_blue">field01</span>.<span class="span_md_red">addEventListener</span>("input", amazing)
+            <span class="comment">// create the function below then call it here</span><br><br>
+
+            function amazing() {<br>
+                <span class="indent">if</span> (<span class="span_sm_blue">field01</span>.value) {<span class="comment">// if field01 is not empty there is a value and so returns TRUE here</span><br>
+                <span class="span_sm_green indent2">original</span>.<span class="span_md_red">innerText</span> = <span class="span_sm_blue">field01</span>.value + " is fine"<br>
+                <span class="indent">}</span> else { <span class="comment">// field01 is empty - no value</span><br>
+                <span class="span_sm_green indent2">original</span>.<span class="span_md_red">innerText</span> = "Please enter a name."
+                <br>
+                <span class="indent">}</span><br>
+            }
+        </div>
+
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<!-- //// below is code for witchy pic ///////////////////////////////-->
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+        
+        <div class="pic" >
+            <div class="insideout">
+                <img class="img" src="media/images/01.jpg" alt="none">
+            </div>
+        </div>
+        
+    </div>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<!-- //// below is code for scripts ////////////////////////////////////////////-->
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/pg01.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+/* accordian @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* Global */
+body {
+    font-family: Verdana, sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: brown;
+  }
+  
+  /* Tabs */
+  .tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .tabs__tab {
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-color: #D1D2D3;
+    background-color: rgb(252, 239, 222);
+  }
+  
+  #tabs--active {
+    border: 1px solid #D1D2D3;
+    border-bottom: 1px solid transparent;
+    background-color: #FFF;
+  }
+  
+  
+  /* Accordian */
+  .accordian {
+    max-width: 600px;
+    margin: 40px auto;
+  }
+  
+  .accordian__container {
+    border: 1px solid #D1D2D3;
+    border-top: none;
+    margin-bottom: -1px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .accordian__image {
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .accordian__title {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #D1D2D3;
+  }
+  
+  .accordian__content {
+    line-height: 24px;
+    font-weight: 300;
+  }
+  
+  /* View Button */
+  .view-link {
+    background-color: #3F3244;
+    display: block;
+    margin: 40px auto;
+    color: #FFF;
+    font-weight: 200;
+    padding: 10px;
+    width: 50%;
+    max-width: 250px;
+    text-align: center;
+  }
+  
+
+/* end accordian @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* witchy @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ////////// GLOBAL /////////////////////////////////////////////////// */
+
+
+body {
+    background-color: white;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+.pic {
+    margin-top: 2000px;
+    text-align: center;
+    border: 10px solid black;
+    background-color: rgb(59, 71, 82);
+}
+.insideout {
+    border: 30px dashed rgb(0, 0, 0);
+}
+.img {
+    border: 5px dotted rgb(254, 187, 62);
+    max-width: 100%;
+}
+
+
+/* //////// END GLOBAL ///////////////////////////////////////////////// */
+
+
+/* //////// pg01 /////////////////////////////////////////////////////// */
+
+
+.topwords {
+    border: 2px solid black;
+    border-radius: 10%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    background-color: #f6b426;
+    box-shadow: 10px 10px 20px #6a3d12;
+}
+
+#whatwhere {
+    font-size: 1.2rem;
+}
+
+.list01 {
+    max-width: 75%;
+    color: red;
+    font-size: 2.5vw;
+    text-align: left;
+    border: 2px solid black;
+    padding: 20px 0 20px 20px;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 20px #6a3d12;
+}
+
+.span_lg_red {
+    font-size: 1.5rem;
+    color: red;
+}
+.span_md_red {
+    font-size: 1.1rem;
+    color: red;
+}
+.span_sm_blue {
+  font-size: .8rem;
+  color: blue;
+}
+.span_sm_green {
+font-size: .8rem;
+color: green;
+}
+
+
+#finished {
+  font-size: .9rem;
+  line-height: 1.7;
+  border: 3px dotted #ccc;
+  max-width: 750px;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.comment {
+  padding-left: 30px;
+  color: #666;
+  font-size: .7rem;
+}
+.indent {
+  padding-left: 20px;
+}
+.indent2 {
+  padding-left: 40px;
+}
+
+
+.separate {
+  border: 1px solid black;
+  box-shadow: 10px 10px 20px #6a3d12;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
